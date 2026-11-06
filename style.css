@@ -1,0 +1,714 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #f6f5f5;
+    font-family: "Poppins", sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+.badge-green{
+    background-color: #d4fce7;
+    font-size: 11px;
+    border-radius: 15px;
+    padding: 5px 10px;
+    color:#036744;
+    width: fit-content;
+}
+
+.nav{
+    background-color: #fff;
+    padding: 15px 0;
+}
+
+/* -------- REUSEABLES --------- */
+.button
+{
+    background-color: #1169d4;
+    color: #fff;
+    border-radius: 9px;
+    text-align: center;
+    border: 2px solid #1169d4;
+    outline: none;
+    font-size: 13px;
+    padding: 7px 10px;
+    cursor: pointer;
+}
+
+.button:hover{
+    background-color: #fff;
+    color:#1169d4;
+}
+
+.nav-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 85%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+
+.nav-container a{
+    font-size: 13px;
+}
+
+.nav-links a:hover{
+    color: #1169d4;
+    font-weight: 500;
+    border-bottom: 2px solid #1169d4;
+}
+
+.nav-container .logo{
+    font-size: 16px;
+    color: #1169d4;
+    font-weight: bolder;
+}
+
+.logo .navy-blue{
+    color: #063268;
+}
+
+
+.nav-links
+{
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a.active{
+    color: #1169d4;
+    font-weight: 500;
+    border-bottom: 2px solid #1169d4;
+}
+
+.cta{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* ------------- BANNER STYLES ------------------ */
+.banner{
+    padding: 25px 0 0 0;
+    /* height: 145px; */
+}
+
+.banner-container{
+    /* display: grid;
+    grid-template-columns: 1fr 1fr; */
+    display: flex;
+    gap: 25px;
+    width: 85%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.banner-item:first-child{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 60%;
+    padding-bottom: 25px;
+}
+
+.banner-item .badge{
+    background-color: #d4e6fc;
+    font-size: 11px;
+    border-radius: 15px;
+    padding: 5px 10px;
+    color:#1169d4;
+    width: fit-content;
+}
+
+.banner-item h1{
+    font-size: 40px;
+    text-transform: capitalize;
+}
+
+.banner-item p,
+.popular{
+    color: #686767;
+}
+
+.banner-item .color{
+    color: #1169d4;
+}
+
+.banner-search{
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #d9d9d9;
+    border-radius: 15px;
+    display: flex;
+    gap: 8px;
+    box-shadow: 3px 4px 10px #d9d9d9;
+}
+
+.banner-search .seperator{
+    height: 100%;
+    background-color: #686767;
+    width: 1px;
+}
+
+.banner-search .form-control{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 215px;
+}
+
+.form-control input,
+.form-control select
+{
+    padding: 8px 4px;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+    border: none;
+    font-size: 12px;
+    width: 100%;
+}
+
+
+.banner-search .button{
+    flex-grow: 1;
+}
+
+.popular
+{
+    font-size: 11px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.banner-item:last-child{
+    width: 40%;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+
+.banner-item:last-child img{
+    width: 100%;
+}
+
+/* ------------- FEATURED ------------- */
+.featured
+{
+    background-color: #fff;
+    padding: 35px 0;
+}
+
+.featured-container{
+    width: 85%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.feature-title
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.feature-title h2{
+    font-size: 16px;
+}
+
+.feature-title p{
+    font-size: 12px;
+    color: #686767;
+}
+
+.feature-title a{
+    color: #1169d4;
+    font-size: 12px;
+    text-decoration: underline;
+}
+
+.feature-display{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    margin: 25px 0;
+}
+
+.feature-item{
+    padding: 15px;
+    border: 2px solid #d4e6fc;
+    border-radius: 20px;
+}
+
+.feature-top{
+   display: flex;
+   align-items: center;
+   gap: 15px; 
+}
+
+.feature-top .icon{
+    width: 45px;
+    height: 45px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.feature-top .i-blue{
+    background-color:#1169d4;
+    color: #fff;
+}
+
+.feature-top span{
+    font-size: 12px;
+}
+
+.feature-bottom{
+    margin-top: 10px;
+}
+.feature-bottom h2{
+    font-size: 15px;
+}
+
+.feature-bottom .location{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 11px;
+    color: #686767;
+    margin: 10px 0;
+}
+
+.f-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 12px;
+    margin-top: 7px ;
+}
+
+.f-bottom .job-link{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #d4e6fc;
+    color: #1169d4;
+}
+
+/* ------------- FEATURED JOB ICONS ------------- */
+
+.feature-top .i-purple {
+    background-color: #6835c9;
+    color: #fff;
+}
+
+.feature-top .i-pink {
+    background-color: #e63f79;
+    color: #fff;
+}
+
+.feature-top .i-green {
+    background-color: #25a56b;
+    color: #fff;
+}
+
+.badge-purple {
+    background-color: #eeeaff;
+    font-size: 11px;
+    border-radius: 15px;
+    padding: 5px 10px;
+    color: #6950c7;
+    width: fit-content;
+    display: inline-block;
+}
+
+/* ------------- BENEFITS SECTION ------------- */
+
+.benefits {
+    background-color: #f6f9ff;
+    padding: 30px 0;
+}
+
+.benefits-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr) 1.4fr;
+    gap: 0;
+    align-items: center;
+    width: 85%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.benefit-item {
+    padding: 0 20px;
+    border-right: 1px solid #e1e7f0;
+    min-width: 0;
+}
+
+.benefit-item:first-child {
+    padding-left: 0;
+}
+
+.benefit-icon {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.search-benefit {
+    background-color: #e0edff;
+    color: #3476e5;
+}
+
+.trust-benefit {
+    background-color: #d9f8e9;
+    color: #21966b;
+}
+
+.growth-benefit {
+    background-color: #ece5ff;
+    color: #7958d5;
+}
+
+.community-benefit {
+    background-color: #fff0d6;
+    color: #db912b;
+}
+
+.benefit-item h3 {
+    color: #173052;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 7px;
+}
+
+.benefit-item p {
+    color: #686767;
+    font-size: 11px;
+    line-height: 1.7;
+}
+
+/* ------------- JOB ALERTS ------------- */
+
+.job-alert {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    background-color: #e5efff;
+    padding: 18px;
+    margin-left: 25px;
+    border-radius: 12px;
+    min-width: 0;
+}
+
+.alert-icon {
+    color: #1169d4;
+    font-size: 27px;
+    margin-top: 3px;
+}
+
+.alert-content {
+    flex: 1;
+    min-width: 0;
+}
+
+.alert-content h3 {
+    font-size: 12px;
+    color: #173052;
+    margin-bottom: 4px;
+}
+
+.alert-content p {
+    font-size: 10px;
+    color: #686767;
+    line-height: 1.6;
+    margin-bottom: 12px;
+}
+
+.alert-form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.alert-form input {
+    width: 100%;
+    min-width: 0;
+    padding: 9px;
+    border: 1px solid #d4e1f5;
+    border-radius: 7px;
+    outline: none;
+    font-family: "Poppins", sans-serif;
+    font-size: 11px;
+    display: none;
+}
+
+.alert-form input:focus {
+    border-color: #1169d4;
+}
+
+.alert-form .button {
+    width: 100%;
+    font-size: 11px;
+    padding: 9px 8px;
+}
+
+/* ------------- TABLET RESPONSIVENESS ------------- */
+
+@media screen and (max-width: 1000px) {
+    .nav-container,
+    .banner-container,
+    .featured-container,
+    .benefits-container {
+        width: 92%;
+    }
+
+    .nav-links {
+        gap: 15px;
+    }
+
+    .banner-item h1 {
+        font-size: 32px;
+    }
+
+    .banner-container {
+        gap: 15px;
+    }
+
+    .banner-item:first-child {
+        width: 60%;
+    }
+
+    .banner-item:last-child {
+        width: 40%;
+    }
+
+    .banner-search {
+        flex-wrap: wrap;
+    }
+
+    .banner-search .form-control {
+        flex: 1;
+        min-width: 120px;
+    }
+
+    .banner-search .seperator {
+        display: none;
+    }
+
+    .feature-display {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .benefits-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px 0;
+    }
+
+    .benefit-item {
+        padding: 0 15px;
+    }
+
+    .benefit-item:nth-child(2) {
+        border-right: none;
+    }
+
+    .job-alert {
+        grid-column: 1 / -1;
+        margin-left: 0;
+    }
+
+    .alert-form {
+        flex-direction: row;
+    }
+
+    .alert-form input {
+        display: block;
+        flex: 1;
+    }
+}
+
+/* ------------- MOBILE RESPONSIVENESS ------------- */
+
+@media screen and (max-width: 650px) {
+    .nav {
+        padding: 12px 0;
+    }
+
+    .nav-container {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .nav-links {
+        order: 3;
+        width: 100%;
+        overflow-x: auto;
+        padding: 5px 0;
+        gap: 20px;
+    }
+
+    .nav-links a {
+        white-space: nowrap;
+    }
+
+    .cta {
+        gap: 12px;
+    }
+
+    .banner {
+        padding-top: 25px;
+    }
+
+    .banner-container {
+        flex-direction: column;
+    }
+
+    .banner-item:first-child,
+    .banner-item:last-child {
+        width: 100%;
+    }
+
+    .banner-item h1 {
+        font-size: 34px;
+        line-height: 1.25;
+    }
+
+    .banner-item:first-child {
+        padding-bottom: 0;
+    }
+
+    .banner-search {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .banner-search .form-control {
+        width: 100%;
+        flex-basis: 100%;
+    }
+
+    .banner-search .form-control select,
+    .banner-search .form-control input {
+        min-width: 0;
+    }
+
+    .banner-search .button {
+        flex-grow: 1;
+    }
+
+    .popular {
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .banner-item:last-child {
+        margin-top: 15px;
+    }
+
+    .banner-item:last-child img {
+        width: 85%;
+    }
+
+    .featured {
+        padding: 25px 0;
+    }
+
+    .feature-title {
+        gap: 10px;
+        align-items: flex-start;
+    }
+
+    .feature-display {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .feature-item {
+        border-radius: 14px;
+    }
+
+    .benefits-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 25px 0;
+    }
+
+    .benefit-item {
+        padding: 0 12px;
+    }
+
+    .benefit-item:first-child {
+        padding-left: 0;
+    }
+
+    .benefit-item:nth-child(2) {
+        border-right: none;
+    }
+
+    .job-alert {
+        grid-column: 1 / -1;
+        margin-left: 0;
+    }
+
+    .alert-form {
+        flex-direction: column;
+    }
+
+    .alert-form input {
+        display: block;
+    }
+}
+
+/* ------------- SMALL MOBILE SCREENS ------------- */
+
+@media screen and (max-width: 380px) {
+    .nav-container,
+    .banner-container,
+    .featured-container,
+    .benefits-container {
+        width: 92%;
+    }
+
+    .nav-links {
+        gap: 14px;
+    }
+
+    .banner-item h1 {
+        font-size: 29px;
+    }
+
+    .feature-title h2 {
+        font-size: 15px;
+    }
+
+    .feature-title p {
+        font-size: 10px;
+    }
+
+    .f-bottom {
+        gap: 5px;
+        font-size: 10px;
+    }
+
+    .benefit-item h3 {
+        font-size: 11px;
+    }
+}

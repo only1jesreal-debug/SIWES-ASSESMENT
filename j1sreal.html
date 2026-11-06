@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JobHub | Find Your Next Opportunity</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="nav">
+        <div class="nav-container">
+
+            <a href="#" class="logo">
+                <i class="fa fa-briefcase"></i>
+                <span>Job<span class="navy-blue">Hub</span></span>
+            </a>
+
+            <div class="nav-links">
+                <a href="#" class="active">Home</a>
+                <a href="#jobs">Find Jobs</a>
+                <a href="#companies">Companies</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </div>
+<!-- CTA BUTTONS --> 
+            <div class="cta">
+                <a href="#">Login</a>
+                <a href="#" class="button">Register</a>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- HERO BANNER -->
+    <section class="banner">
+        <div class="banner-container">
+
+            <div class="banner-item">
+
+                <span class="badge hero-badge">
+                    <i class="fa fa-search"></i>
+                    Find Your Next Opportunity
+                </span>
+
+                <h1>
+                    Your <span class="color">Next Job</span><br>
+                    Is Closer Than You Think
+                </h1>
+
+                <p class="hero-description">
+                    Discover amazing job opportunities, connect with top
+                    companies, and take the next step in your career.
+                </p>
+
+                <!-- JOB SEARCH -->
+                <form class="banner-search" action="#jobs">
+
+                    <div class="form-control">
+                        <i class="fa fa-search"></i>
+                        <input type="text"
+                            name="keyword"
+                            placeholder="Job title, keyword or company">
+                    </div>
+
+                    <span class="seperator"></span>
+
+                    <div class="form-control location-control">
+                        <i class="fa fa-map-marker"></i>
+
+                        <select name="location">
+                            <option value="" selected>Location</option>
+                            <option value="calabar">Calabar</option>
+                            <option value="lagos">Lagos</option>
+                            <option value="abuja">Abuja</option>
+                            <option value="enugu">Enugu</option>
+                            <option value="remote">Remote</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="button search-button">
+                        Search Jobs
+                    </button>
+
+                </form>
+
+                <!-- POPULAR SEARCHES -->
+                <div class="popular">
+                    <span class="popular-label">Popular searches:</span>
+                    <a href="#jobs" class="badge">Frontend Developer</a>
+                    <a href="#jobs" class="badge">Backend Developer</a>
+                    <a href="#jobs" class="badge">UI/UX Designer</a>
+                    <a href="#jobs" class="badge">Remote Jobs</a>
+                </div>
+
+            </div>
+
+            <!-- HERO IMAGE -->
+            <div class="banner-item hero-visual">
+
+                <div class="hero-shape"></div>
+                <img src="Confident Career Journey with Laptop.png" alt="My photo">
+                    </div>
+                </div>
+
+                <div class="floating-card company-card">
+                    <div class="floating-icon green-icon">
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURED JOBS -->
+    <section class="featured" id="jobs">
+        <div class="featured-container">
+
+            <div class="feature-title">
+                <div class="left">
+                    <h2>Featured Jobs</h2>
+                    <p>Handpicked opportunities from top companies</p>
+                </div>
+
+                <a href="#jobs" class="view-all">
+                    View All Jobs <i class="fa fa-arrow-right"></i>
+                </a>
+            </div>
+
+            <div class="feature-display">
+
+                <!-- JOB 1 -->
+                <article class="feature-item">
+                    <div class="feature-top">
+                        <div class="icon i-blue">
+                            <i class="fa fa-code"></i>
+                        </div>
+                        <span>TechVision</span>
+                    </div>
+
+                    <div class="feature-bottom">
+                        <h3>Frontend Developer</h3>
+
+                        <div class="location">
+                            <span><i class="fa fa-map-marker"></i>
+                                Lagos, Nigeria</span>
+                            <i class="fa fa-circle dot"></i>
+                            <span>Remote</span>
+                        </div>
+
+                        <span class="badge-green">Full-time</span>
+
+                        <div class="f-bottom">
+                            <span>₦300,000 – ₦500,000 / month</span>
+                            <a href="#" class="job-link" aria-label="View Frontend Developer job">
+                                <i class="fa fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- JOB 2 -->
+                <article class="feature-item">
+                    <div class="feature-top">
+                        <div class="icon i-purple">
+                            <i class="fa fa-bar-chart"></i>
+                        </div>
+                        <span>GrowthPlus</span>
+                    </div>
+
+                    <div class="feature-bottom">
+                        <h3>Backend Developer</h3>
+
+                        <div class="location">
+                            <span><i class="fa fa-map-marker"></i>
+                                Abuja, Nigeria</span>
+                            <i class="fa fa-circle dot"></i>
+                            <span>Remote</span>
+                        </div>
+
+                        <span class="badge-green">Full-time</span>
+
+                        <div class="f-bottom">
+                            <span>₦400,000 – ₦700,000 / month</span>
+                            <a href="#" class="job-link" aria-label="View Backend Developer job">
+                                <i class="fa fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- JOB 3 -->
+                <article class="feature-item">
+                    <div class="feature-top">
+                        <div class="icon i-pink">
+                            <i class="fa fa-pencil"></i>
+                        </div>
+                        <span>CreativeLabs</span>
+                    </div>
+
+                    <div class="feature-bottom">
+                        <h3>UI/UX Designer</h3>
+
+                        <div class="location">
+                            <span><i class="fa fa-map-marker"></i>
+                                Port Harcourt, Nigeria</span>
+                            <i class="fa fa-circle dot"></i>
+                            <span>Remote</span>
+                        </div>
+
+                        <span class="badge-purple">Contract</span>
+
+                        <div class="f-bottom">
+                            <span>₦200,000 – ₦400,000 / month</span>
+                            <a href="#" class="job-link" aria-label="View UI/UX Designer job">
+                                <i class="fa fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- JOB 4 -->
+                <article class="feature-item">
+                    <div class="feature-top">
+                        <div class="icon i-green">
+                            <i class="fa fa-bullhorn"></i>
+                        </div>
+                        <span>BrightMedia</span>
+                    </div>
+
+                    <div class="feature-bottom">
+                        <h3>Digital Marketing Specialist</h3>
+
+                        <div class="location">
+                            <span><i class="fa fa-map-marker"></i>
+                                Lagos, Nigeria</span>
+                            <i class="fa fa-circle dot"></i>
+                            <span>Hybrid</span>
+                        </div>
+
+                        <span class="badge-green">Full-time</span>
+
+                        <div class="f-bottom">
+                            <span>₦250,000 – ₦450,000 / month</span>
+                            <a href="#" class="job-link" aria-label="View Digital Marketing job">
+                                <i class="fa fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- BENEFITS -->
+    <section class="benefits" id="about">
+        <div class="benefits-container">
+
+            <article class="benefit-item">
+                <div class="benefit-icon search-benefit">
+                    <i class="fa fa-search"></i>
+                </div>
+                <h3>Easy to Search</h3>
+                <p>Filter jobs by location, category, experience and more.</p>
+            </article>
+
+            <article class="benefit-item" id="companies">
+                <div class="benefit-icon trust-benefit">
+                    <i class="fa fa-shield"></i>
+                </div>
+                <h3>Trusted Companies</h3>
+                <p>Work with verified and reputable employers.</p>
+            </article>
+
+            <article class="benefit-item">
+                <div class="benefit-icon growth-benefit">
+                    <i class="fa fa-line-chart"></i>
+                </div>
+                <h3>Grow Your Skills</h3>
+                <p>Access resources and tips to boost your career.</p>
+            </article>
+
+            <article class="benefit-item">
+                <div class="benefit-icon community-benefit">
+                    <i class="fa fa-users"></i>
+                </div>
+                <h3>Join Our Community</h3>
+                <p>Connect with other job seekers and professionals.</p>
+            </article>
+
+            <!-- JOB ALERT -->
+            <div class="job-alert" id="contact">
+                <i class="fa fa-paper-plane alert-icon"></i>
+
+                <div class="alert-content">
+                    <h3>Get Job Alerts</h3>
+                    <p>Be the first to know about new opportunities in your field.</p>
+
+                    <form class="alert-form">
+                        <input type="email"
+                            placeholder="Enter your email"
+                            aria-label="Email address"
+                            required>
+                        <button type="submit" class="button">
+                            Subscribe Now
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+</body>
+</html>
